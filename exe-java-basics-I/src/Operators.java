@@ -128,5 +128,8 @@ public class Operators {
     int yyy = (xxx++ + 3) * xxx++;
     System.out.println(yyy); // (4 + 3) * 4 = 28
     // Why yyy = 24?
+    // (xxx++ + 3) * xxx++
+    // 完成(xxx++ + 3) 後 xxx++ 才遞增，這裡是 3 ＋ 3 ＝ 6
+    // 6 * xxx++ ，此時 xxx++ 為 4 ，完成後遞增，這裡是 6 * 4 = 24
   }
 }
